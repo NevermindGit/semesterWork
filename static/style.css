@@ -1,0 +1,237 @@
+.navbar{
+	border-radius: 10px;
+	margin-left: 2.63%;
+	width: 95%;
+	height: 100px;
+	background-color: lightseagreen;
+	box-shadow: 0 4px 10px rgba(0,0,0, .1);
+}
+
+.navbar .container {
+	height: inherit;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar-menu li {
+	display: inline-block;
+
+}
+
+.navbar-menu li a {
+	height: 80px;
+	width: 80px;
+	color: #000;
+	opacity: 0.6;
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px;
+	margin-right: 90px;
+}
+
+.navbar-wrap {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.mainlogo {
+	margin-left: 50px;
+	height: 100px;
+	width: 117px;
+}
+
+.cards_list{
+	margin-top: 30px;
+	margin-left: 3.8%;
+	gap: 20px;
+	width: 95%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+	height: 300px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	position: relative;
+	background: #fff;
+
+}
+.card-img{
+	width: 200px;
+	height: 200px;
+}
+
+.navbar-menu li a:hover {
+	opacity: 1;
+}
+
+.prod {
+	height: 60px;
+	width: 60px;
+
+}
+.prod:hover {
+	animation: rotate 1s linear infinite
+}
+
+.products_ic {
+	height: 60px;
+	width: 60px;
+}
+
+.profile_main {
+	height: 730px;
+	margin-left: 2.68%;
+	width: 95%;
+	background: lightgrey;
+	border-radius: 10px;
+}
+
+.notauth {
+	left: 10px;
+}
+
+.profile_main_text {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	align-items: center;
+	margin-top: 50px;
+}
+.username {
+	margin-right: 40px;
+	font-size: 40px;
+	bottom: 30px;
+}
+
+.profile_info {
+	margin-left: 50px;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.imgcart {
+	height: 30px;
+	width: 30px;
+}
+
+.cartcards_list {
+	margin-top: 30px;
+	margin-left: 3.8%;
+	gap: 20px;
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+}
+.logoutbtn {
+	width: 50px;
+ 	text-decoration: wavy;
+	background-color: lavender;
+	color: black;
+	border-radius: 5px;
+}
+.remove{
+	height: 30px;
+	width: 30px;
+}
+
+.createbtn{
+	width: 100px;
+	text-decoration: wavy;
+	background-color: lavender;
+	color: black;
+	border-radius: 5px;
+}
+.menucreate{
+	display: flex;
+	gap: 20px;
+	flex-direction: row;
+	margin-left: 4%;
+	margin-top: 4%;
+}
+.log_form{
+	margin-left: auto;
+    margin-right: auto;
+	width: 25%;
+	/*margin-left: 70px;*/
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.alreadyhave{
+	margin-left: 650px;
+	margin-top: 5px;
+}
+
+.btn-already{
+	font-size: 15px;
+	background-color: lightgreen;
+	border-radius: 10px;
+}
+
+.signupbtn {
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 15px;
+	background-color: lightseagreen;
+	border-radius: 10px;
+}
+
+.info-btns{
+	display: flex;
+	flex-direction: row;
+	height: 30px;
+	gap: 10px;
+}
+img.gear{
+	height: 30px;
+	width: 30px;
+}
+
+.alertnotyourproduct{
+	font-size: 30px;
+	display: flex;
+	margin-left: 45%;
+	margin-top: 50px;
+	background-color: red;
+	width: 300px;
+	border-radius: 5px;
+	color: black;
+}
+
+.deletemenu{
+	display: flex;
+	width: 200px;
+	margin-left: 5%;
+	margin-top: 5%;
+	background-color: lightcoral;
+	border-radius: 5px;
+	text-align: center;
+}
+.text-in-delete{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-left: 10px;
+}
+.menuedit{
+	display: flex;
+	gap: 20px;
+	flex-direction: row;
+	margin-left: 4%;
+	margin-top: 4%;
+}
+img.removebtn{
+	width: 30px;
+	height: 30px;
+	margin-left: 100px;
+}

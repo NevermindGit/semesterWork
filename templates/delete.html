@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if session['user_id'] == product.u_id and session['name'] %}
+<form method="POST" action="">
+<div class="deletemenu">
+    <div class="text-in-delete">
+    <label>Имя товара: {{ product['name'] }}</label>
+    <label>Цена: {{ product['price'] }}</label>
+    <label class="descrip">Описание: {{ product['description'] }}</label>
+    <input type="submit" class="delete_sform" value="Удалить" onclick="return confirm('Вы действительно хотите удалить товар?')">
+    </div>
+</div>
+</form>
+{% else %}
+<h1 class="alertnotyourproduct">У вас нет прав</h1>
+{% endif %}
+{% endblock %}

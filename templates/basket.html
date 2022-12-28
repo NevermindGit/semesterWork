@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="cartcards_list">
+    {% for product in products %}
+        <div class="card">
+            <img src=/static/images/{{product.product_image}} class="card-img" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Название: {{ product.name }}</h5>
+                <h5 class="card-text">Цена: {{ product.price }}</h5>
+                <a class="remove" href="{{url_for('removefrombasket', p_id=product.id)}}">
+                    <button class="removebtn">Удалить</button>
+                </a>
+
+        </div>
+    {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="cards_list">
+    {% for product in products %}
+        <div class="card">
+            <img src=/static/images/{{product.product_image}} class="card-img" alt="Sneaker image">
+            <div class="card-body">
+                <h5 class="card-title">Название: {{ product.name }}</h5>
+                <h5 class="card-text">Цена: {{ product.price }}руб</h5>
+
+                <div class="info-btns">
+                    <a href="{{ url_for('product_edit', p_id=product.product_id) }}">
+                        <button>Edit</button>
+                    </a>
+                    <a href="{{ url_for('product_delete', p_id=product.product_id) }}">
+                        <button>Delete</button>
+                    </a>
+                    <a class="addtocart" href="{{ url_for('addToBasket', p_id=product.product_id) }}">
+                        <button>Add to basket</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

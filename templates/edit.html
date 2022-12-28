@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if session['user_id'] == product.u_id and session['name'] %}
+<form method="POST" action="">
+    <div class="update-container">
+        <div class="menuedit">
+            <input type="text" name="name" value="{{product.name}}" placeholder="Введите название">
+            <input type="text" name="price" value="{{product.price}}" placeholder="Введите цену">
+            <input type="text" name="description" value="{{product.description}}" placeholder="Опишите товар">
+            <input type="text" name="size", value="{{product_params.size}}" placeholder="Размер">
+            <input type="text" name="maker" value="{{product_params.maker}}" placeholder="Введите производителя">
+            <input type="submit" class="update_sform" value="Изменить" onclick="return confirm('Вы хотите сохранить изменения?')"/>
+        </div>
+    </div>
+</form>
+</div>
+{% else %}
+    <h1 class="alertnotyourproduct">У вас нет прав на редактирование!</h1>
+{% endif %}
+
+{% endblock %}

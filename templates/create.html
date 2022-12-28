@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="createmenu">
+<form name="data" class="data" method="POST" enctype="multipart/form-data" onsubmit="return validate()" action="">
+    <div class="menucreate">
+        <input type="text" name="name" placeholder="Введите название">
+        <input type="text" name="price" placeholder="Введите цену">
+        <input type="text" name="description" placeholder="Опишите товар">
+        <input type="text" name="size" placeholder="Размер">
+        <form  method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" placeholder="Вставьте фото товара">
+        </form>
+        <input type="text" name="maker" placeholder="Введите бренд">
+        <input type="submit" class="update_sform" value="Создать"/>
+    </div>
+</form>
+</div>
+<script>
+  function validate() {
+      let name = document.forms["data"]["name"].value;
+    if (name == "") {
+      alert("Укажите название");
+      return false;
+    }
+    let price = document.forms["data"]["price"].value;
+    if (price == "") {
+      alert("Укажите цену");
+      return false;
+    }
+    let desc = document.forms["data"]["description"].value;
+    if (desc == "") {
+      alert("Укажите описание");
+      return false;
+    }
+    }
+</script>
+{% endblock %}
